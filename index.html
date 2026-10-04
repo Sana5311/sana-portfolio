@@ -4,149 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sana Mamnoon | Portfolio</title>
-
-    <!-- CSS File -->
+    <meta name="description" content="Sana — Portfolio home. MCA student at AMU.">
+    <title>Home | Sana</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="page-home">
+    <div id="site-header"></div>
 
-    <!-- Navbar -->
-    <header>
-        <nav class="navbar">
-            <div class="logo">Sana.</div>
-
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-
-        <div class="hero-text">
-            <h1>Hello, I'm <span>Sana</span></h1>
-
-            <h2>Software Developer | AI Enthusiast</h2>
-
-            <p>
-                Computer Science student passionate about Web Development, UI/UX Design, Database Management and Artificial Intelligence.
-            </p>
-
-            <a href="#projects" class="btn">View Projects</a>
-            <a href="Resume_Sana.docx" class="btn btn-outline" download>
-                Download Resume
-            </a>
-        </div>
-
-
-
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-
-        <h2 class="section-title">About Me</h2>
-
-        <p class="about-text">
-            I'm Sana Mamnoon, a passionate Software Developer with skills in React.js, JavaScript, Python, PHP, MySQL, UI/UX Design, and Git/GitHub. I enjoy building modern web applications, designing intuitive user experiences, and developing efficient solutions
-            to real-world problems. With a strong foundation in software development and a continuous learning mindset, I am committed to creating innovative, scalable, and user-focused digital products.
-        </p>
-
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-
-        <h2 class="section-title">Skills</h2>
-
-        <div class="skills-container">
-
-            <div class="skill-card">HTML</div>
-            <div class="skill-card">CSS</div>
-            <div class="skill-card">JavaScript</div>
-            <div class="skill-card">PHP</div>
-            <div class="skill-card">MySQL</div>
-            <div class="skill-card">Python</div>
-            <div class="skill-card">Git & GitHub</div>
-            <div class="skill-card">Figma</div>
-            <div class="skill-card">Reactjs</div>
-
-        </div>
-
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-
-        <h2 class="section-title">Projects</h2>
-
-        <div class="projects-container">
-
-            <div class="project-card">
-                <h3>AI Integrated SRMS</h3>
-
-                <p>
-                    Student Result Management System with AI Performance Analysis and Chatbot.
+    <main>
+        <section class="hero">
+            <div class="hero-content reveal">
+                <p class="hero-eyebrow">
+                    <span class="pulse-dot"></span> Aligarh, Uttar Pradesh
                 </p>
-            </div>
-
-            <div class="project-card">
-                <h3>UI/UX Design Projects</h3>
-
-                <p>
-                    Responsive website designs and interactive prototypes using Figma.
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Sana</span>
+                </h1>
+                <p class="hero-role">
+                    <span id="role-text">Web Developer</span>
+                    <span class="role-cursor" aria-hidden="true">|</span>
                 </p>
-
-                <a href="https://www.theoriginaltraders.com/" class="btn">View</a>
-
+                <p class="hero-desc">
+                    MCA student at Aligarh Muslim University — building thoughtful interfaces, robust backends, and AI-powered academic systems.
+                </p>
+                <div class="hero-cta">
+                    <a href="projects.html" class="btn btn-primary">View my work</a>
+                    <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+                </div>
+                <div class="hero-meta">
+                    <a href="mailto:gm5311@myamu.ac.in">gm5311@myamu.ac.in</a>
+                    <span class="meta-sep">·</span>
+                    <a href="tel:+918090214901">(+91) 8090214901</a>
+                </div>
             </div>
+            <div class="hero-visual reveal" data-delay="1">
+                <div class="profile-ring">
+                    <div class="profile-inner">
+                        <span class="profile-initials">SM</span>
+                    </div>
+                    <div class="orbit-badge badge-1">Figma</div>
+                    <div class="orbit-badge badge-2">Python</div>
+                    <div class="orbit-badge badge-3">MySQL</div>
+                    <div class="orbit-badge badge-4">AI</div>
+                </div>
+            </div>
+        </section>
 
+        <section class="section home-hub">
+            <div class="section-head reveal">
+                <span class="section-label">Navigate</span>
+                <h2 class="section-title">Explore the portfolio</h2>
+            </div>
+            <div class="hub-grid">
+                <a href="about.html" class="hub-card reveal">
+                    <span class="hub-icon">01</span>
+                    <h3>About</h3>
+                    <p>Story, goals, and what I bring to teams.</p>
+                    <span class="hub-arrow">Open page →</span>
+                </a>
+                <a href="skills.html" class="hub-card reveal" data-delay="1">
+                    <span class="hub-icon">02</span>
+                    <h3>Skills</h3>
+                    <p>Languages, data stack, design tools.</p>
+                    <span class="hub-arrow">Open page →</span>
+                </a>
+                <a href="experience.html" class="hub-card reveal" data-delay="2">
+                    <span class="hub-icon">03</span>
+                    <h3>Experience</h3>
+                    <p>Internship, education, campus roles.</p>
+                    <span class="hub-arrow">Open page →</span>
+                </a>
+                <a href="projects.html" class="hub-card reveal" data-delay="3">
+                    <span class="hub-icon">04</span>
+                    <h3>Projects</h3>
+                    <p>UI/UX client work and SRMS on GitHub.</p>
+                    <span class="hub-arrow">Open page →</span>
+                </a>
+            </div>
+        </section>
+    </main>
 
-        </div>
-
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-
-        <h2 class="section-title">Contact Me</h2>
-
-        <p>Email: sanamamnoon2580@gmail.com</p>
-
-        <p>
-            GitHub:
-            <a href="https://github.com/Sana5311" target="_blank">
-                github.com/Sana5311
-            </a>
-        </p>
-
-        <p>
-            LinkedIn:
-            <a href="https://www.linkedin.com/in/sana-mamnoon-51255726a" target="_blank">
-                linkedin.com/in/sana-mamnoon-51255726a
-            </a>
-        </p>
-
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 Sana Mamnoon. All Rights Reserved.</p>
-    </footer>
-
-    <!-- JavaScript File -->
+    <div id="site-footer"></div>
+    <script src="shared.js"></script>
     <script src="script.js"></script>
-
 </body>
 
 </html>
